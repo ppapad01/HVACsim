@@ -122,20 +122,20 @@ xlabel('time (hours)','Interpreter','latex')
 subplot(3,2,4)
 plot(t1, x1(:,Leng+2:2*(Leng)));
 title('Flow rate in fan-coil units','Interpreter','latex')
-ylabel('$u_{i}$','Interpreter','latex')
+ylabel('$u_{i}$','Interpreter','latex','FontSize','25')
 xlabel('time (hours)','Interpreter','latex')
 
 subplot(3,2,5)
 plot(t1, x1(:,3*(Leng)+3));
 title('Estimation of $T_{st}$','Interpreter','latex')
-ylabel('$\hat{T}_{st}$','Interpreter','latex')
-xlabel('time (hours)','Interpreter','latex')
+ylabel('$\hat{T}_{st}$','Interpreter','latex','FontSize','25')
+xlabel('time (hours)','Interpreter','latex','FontSize','25')
 
 subplot(3,2,6)
 plot(t1, x1(:,2*Leng+3:3*(Leng)+2));
 title('Estimation of $T_{z}$','Interpreter','latex')
-ylabel('$\hat{T}_{z}$','Interpreter','latex')
-xlabel('time (hours)','Interpreter','latex')
+ylabel('$\hat{T}_{z}$','Interpreter','latex','FontSize','25')
+xlabel('time (hours)','Interpreter','latex','FontSize','25')
 
 
 figure;hold all;
@@ -161,6 +161,4 @@ plot(ttnew,abs(Enew{1}),ttnew,Ebarnew{1})
 figure
 plot(ttnew,abs(Enew{84}),ttnew,Ebarnew{84})
 
-figure
-plot(ttnew,Dnew{1})
 
