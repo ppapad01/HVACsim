@@ -3,7 +3,7 @@ this is the master
 
 # HVACsim-toolkit
 
-The HVACsim-toolkit is an open-source software, originally developed by the KIOS Research Center for Intelligent Systems and Networks of the University of Cyprus which operates within the Matlab environment, for providing a programming interface for the latest version of EPANET, a hydraulic and quality modeling software created by the US EPA, with Matlab, a high-level technical computing software. The goal of the EPANET Matlab Toolkit is to serve as a common programming framework for research and development in the growing field of smart water networks.
+The HVACsim-toolkit is an open-source software, originally developed by the KIOS Research Center for Intelligent Systems and Networks of the University of Cyprus which operates within the Matlab environment, for simulating HVAC system of a building using gbXML file. The gbXML files can be exported from Revit building designs (.rvt) by generating energy simulation in the menu Analyze.
 
 The HVACsim-toolkit features easy to use modeling, simulating and plotting results of HVAC systems using Buidling design projects in Revit.
 
