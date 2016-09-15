@@ -1,4 +1,4 @@
-function getdata(name)
+function DATA=getdata(name)
 %getdata clear DATA.mat and reads the gbXML file from the Benchmark file and returns the mat-file DATA. 
 %Run this function after calling 'start_toolkit'.
 %
@@ -8,7 +8,7 @@ function getdata(name)
 %    name='name.xml'
 %
 % Outputs:
-%    none
+%    DATA : is structure of the gbXML file
 %
 % Example: 
 %    getdata('House_8x23.xml')
@@ -30,5 +30,5 @@ clear DATA;
 
 DATA=parseXML(name);
 
-save DATA;
+
 
