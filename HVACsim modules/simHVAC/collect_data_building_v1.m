@@ -37,7 +37,7 @@ clear tmp_indices;
 
 path_results;
 
-Ad = 1.95096;       % Door Area
+Ad = 1.95096;       % Door Area  Adij
 Height = 2.438;     % Height of ceiling
 H = Height;
 p_air = 1.225;     % Air Pressure
@@ -108,7 +108,7 @@ end
 COPmax=3.5;
 aw=12;
 awz=0.6;
-h=8.29;
+h=8.29;   % heat tranfer coefficient W/m^-2 C
 Cw=8370;
 Tpl=20;
 Ta=5; %ambient
