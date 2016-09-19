@@ -87,7 +87,9 @@ tt={};
 D={};
 E={};
 Ebar={};
+
 time=1;
+
 options=odeset('RelTol',1e-3,'AbsTol',1e-2);%,'OutputFcn',@Controller)
 %status = Controller(t,x, str_z, awz, h, p_air, Cp, kst, Trefw, Ta, Cv, aw, Cw, Ustmax, COPmax, DTmax, To, Tpl);
 [t1,x1] = ode45(@(t,x) systemmv4(t, x, str_z, h, awz, Cw, Ustmax, COPmax, To,...
@@ -96,20 +98,44 @@ options=odeset('RelTol',1e-3,'AbsTol',1e-2);%,'OutputFcn',@Controller)
 
 %U1=Controller(t1,x1, str_z, awz, h, p_air, Cp, kst, Trefw, Ta, Cv, aw, Cw, Ustmax, COPmax, DTmax, To, Tpl);
 
+fontsize='25';
 
 figure
 subplot(3,2,1)
 plot(t1, x1(:,Leng+1));
+title('Water temperature in Storage tank','Interpreter','latex')
+ylabel('$T_{st}$','Interpreter','latex')
+xlabel('time (hours)','Interpreter','latex')
+
 subplot(3,2,2)
 plot(t1, x1(:,1:Leng));
+title('Air temperature in Zones','Interpreter','latex')
+ylabel('$T_{z}$','Interpreter','latex')
+xlabel('time (hours)','Interpreter','latex')
+
 subplot(3,2,3)
 plot(t1, x1(:,2*(Leng+1)));
+title('Normalized energy in heat pump','Interpreter','latex')
+ylabel('$u_{st}$','Interpreter','latex')
+xlabel('time (hours)','Interpreter','latex')
+
 subplot(3,2,4)
 plot(t1, x1(:,Leng+2:2*(Leng)));
+title('Flow rate in fan-coil units','Interpreter','latex')
+ylabel('$u_{i}$','Interpreter','latex')
+xlabel('time (hours)','Interpreter','latex')
+
 subplot(3,2,5)
 plot(t1, x1(:,3*(Leng)+3));
+title('Estimation of $T_{st}$','Interpreter','latex')
+ylabel('$\hat{T}_{st}$','Interpreter','latex')
+xlabel('time (hours)','Interpreter','latex')
+
 subplot(3,2,6)
 plot(t1, x1(:,2*Leng+3:3*(Leng)+2));
+title('Estimation of $T_{z}$','Interpreter','latex')
+ylabel('$\hat{T}_{z}$','Interpreter','latex')
+xlabel('time (hours)','Interpreter','latex')
 
 
 figure;hold all;
@@ -135,4 +161,6 @@ plot(ttnew,abs(Enew{1}),ttnew,Ebarnew{1})
 figure
 plot(ttnew,abs(Enew{84}),ttnew,Ebarnew{84})
 
+figure
+plot(ttnew,Dnew{1})
 
