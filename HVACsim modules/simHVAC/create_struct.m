@@ -202,7 +202,7 @@ for i=1:Nzones-3
         fprintf('\n- - - - - ERROR In "surf_perimeter" - - - - -\n')
     end
     
-    str_zones(i).cz = str_zones(i).vol*p_air*Cv*m;
+    str_zones(i).cz = str_zones(i).vol*p_air; %*Cv*m;
   % MIGHT HAVE TO CHANGE!!!
     str_zones(i).Ad = h*str_zones(i).surf_perimeter; %total area of the walls in zone i
     %str_zones(i).Umax = (str_zones(i).vol/min_vol)*umax; %3700
