@@ -3,18 +3,27 @@ classdef Building
     %   Detailed explanation goes here
     
     properties
-        Units
+        DATA
+        areaUnit
+        volumeUnit
+        lengthUnit
+        temperatureUnit
         %Type
         %Area
         %Volume
         %Location
-        %Zones      
+        %Zones 
+        %Name
     end
     
     methods
-       
-        function Units=getareaunit(DATA)
+        function obj=Building(varargin)
         end
+         
+        function areaUnit=getareaunit(obj,DATA)
+           areaUnit=getfield(DATA.Attributes(1).Value,{})
+        end
+        
     end
     
 end
