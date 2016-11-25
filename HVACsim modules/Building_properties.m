@@ -1,4 +1,4 @@
-classdef Building
+classdef Building_properties %< Units
     %   Building is the main class.
     %   Building contains the type, the address and the area of the
     %   building, the units that we use and the space that it
@@ -15,7 +15,7 @@ classdef Building
     end
     
     methods
-        function obj=Building(varargin)
+        function obj=Building_properties(varargin)
         end
         
         function getType=Type(obj,str)
@@ -30,9 +30,9 @@ classdef Building
             Area=str.Children(2).Children(4).Children(4).Children.Data
         end
         
-        function getUnits=Units(obj,str)
+      %  function getUnits=Units(obj,str)
             
-        end
+        %end
         
     end
     
