@@ -15,7 +15,7 @@ Matlab
 
 # How to use the Toolkit
 
-Download the folder Download ZIP, set the run path in Matlab within the saved folder, and run RunTests.m. This will execute all the commands which have been implemented in the Class.
+Download the folder Download ZIP, set the run path in Matlab within the saved folder, and run simSystem.m that appears in Folder path: 'HVACsim/HVACsim modules/simHVAC/simSystem.m'. This will execute all the commands which have been implemented in the Class and run a simulation of the Building HVAC Control system.
 
 Example:
 
