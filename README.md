@@ -35,6 +35,5 @@ HVACsim Toolkit: EUPL
 
 Panayiotis Papadopoulos, KIOS Research Center for Intelligent Systems and Networks, University of Cyprus
 
-The EPANET-Matlab Toolkit is based/inspired on the EPANET-Matlab Toolkit as well as the OpenWaterAnalytics EPANET-Matlab Wrappers
 
 # List of Matlab Class Functions
